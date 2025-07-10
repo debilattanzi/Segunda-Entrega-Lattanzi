@@ -36,17 +36,15 @@ let productos = [
     }
   ]
   
-let nextId = productos.length + 1;
+  let nextId = productos.length + 1;
 
-
-
-module.exports = {
+  module.exports = {
     getAll: () => productos,
     add: (product) => {
-        product.id = nextId++;
-        productos.push(product);
+      product.id = nextId++;
+      productos.push(product);
     },
     remove: (id) => {
-        productos = productos.filter(product => product.id !== parseInt(id));
+      productos = productos.filter(p => p.id !== id);
     }
-}
+  };

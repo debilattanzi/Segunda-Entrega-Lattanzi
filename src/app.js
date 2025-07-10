@@ -15,7 +15,7 @@ app.use(express.static(Path.join(__dirname, 'public')));
 
 
 const viewsRouter = require('./routes/views.router');
-app.use('/', viewsRouter); //ruta para las vistas
+app.use('/', viewsRouter); 
 
 
   
