@@ -1,5 +1,4 @@
 const socket = io();
-
 const listaProductos = document.getElementById('listaProductos');
 const formAgregar = document.getElementById('formAgregar');
 const formEliminar = document.getElementById('formEliminar');
@@ -33,3 +32,4 @@ formEliminar.addEventListener('submit', (event) => {
   socket.emit('eliminarProducto', id);
   formEliminar.reset();
 });
+
