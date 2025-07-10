@@ -1,3 +1,4 @@
+
 const socket = io();
 const listaProductos = document.getElementById('listaProductos');
 const formAgregar = document.getElementById('formAgregar');

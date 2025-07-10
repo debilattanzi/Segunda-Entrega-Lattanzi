@@ -6,8 +6,8 @@ router.get('/', (req, res) => {
   res.render('home', { productos: products.getAll() });
 });
 
-router.get('/realtimeproducts', (req, res) => {
-  res.render('realTimeProducts', { productos: products.getAll() }); 
+router.get('/realTimeProducts', (req, res) => {
+  res.render('realTimeProducts'); 
 });
 
 module.exports = router;
