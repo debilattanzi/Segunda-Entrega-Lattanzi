@@ -4,6 +4,8 @@ const listaProductos = document.getElementById('listaProductos');
 const formAgregar = document.getElementById('formAgregar');
 const formEliminar = document.getElementById('formEliminar');
 
+listaProductos.innerHTML = '';
+
 socket.on('productos', (productos) => {
   listaProductos.innerHTML = '';
   productos.forEach(product => {
