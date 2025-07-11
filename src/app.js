@@ -18,6 +18,7 @@ app.use(express.static(Path.join(__dirname, '..', 'public')));
 const viewsRouter = require('./routes/views.router');
 app.use('/', viewsRouter); 
 
-
+const productsRouter = require('./routes/products.router');
+app.use('/api/products', productsRouter);
   
 module.exports = app;
